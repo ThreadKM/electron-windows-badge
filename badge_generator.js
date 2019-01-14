@@ -47,7 +47,7 @@ module.exports = class BadgeGenerator {
       this.ctx.textAlign = "center";
       this.ctx.textBaseline = "middle";
       this.ctx.fillStyle = this.displayStyle.fontColor;
-			number = (this.number === -1) ? '•' : this.number.toFixed(this.displayStyle.decimals);
+      number = (this.number === -1) ? '•' : this.number.toFixed(this.displayStyle.decimals);
       fontSize = Number(/[0-9\.]+/.exec(this.ctx.font)[0]);
 
       if (!this.displayStyle.fit || isNaN(fontSize)) {
